@@ -6,7 +6,20 @@ namespace If_Else
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int temperature = 10;
+            if(temperature < 10)
+            {
+                Console.WriteLine("Take the coat");
+            }else if(temperature == 10)
+            {
+                Console.WriteLine("It's 10 degrees C");
+            }
+            else
+            {
+                Console.WriteLine("Its cozy!");
+            }
+
+           
         }
     }
 }
