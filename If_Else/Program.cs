@@ -11,6 +11,10 @@ namespace If_Else
             string tempInput = Console.ReadLine();
             int numTemp;
             int number;
+
+            //can also do "bool enteredNum = int.TryParse(temperature, out number)"
+            //then use if(enteredNum){}
+
             if (int.TryParse(tempInput, out number))
             {
                 numTemp = number;
@@ -33,7 +37,27 @@ namespace If_Else
                 Console.WriteLine("Its cozy!");
             }
 
+            //nested if statements
 
+            Console.WriteLine("Please enter your username:");
+            bool isAdmin = false;
+            bool isRegistered = true;
+            string username = "";
+            username = Console.ReadLine();
+
+            if (isRegistered)
+            {
+                Console.WriteLine("Hi there, User!");
+                if(username != "")
+                {
+                    Console.WriteLine("Hi there, {0}", username);
+                    if (username.Equals("admin"))
+                    {
+                        Console.WriteLine("Hi there, admin!");
+                    }
+                }
+                
+            }
            
         }
     }
