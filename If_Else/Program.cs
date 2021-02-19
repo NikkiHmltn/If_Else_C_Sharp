@@ -58,6 +58,11 @@ namespace If_Else
                 }
                 
             }
+
+            if(isAdmin || isRegistered)
+            {
+                Console.WriteLine("You are logged in.");
+            }
            
         }
     }
