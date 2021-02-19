@@ -6,7 +6,11 @@ namespace If_Else
     {
         static void Main(string[] args)
         {
-            int temperature = 10;
+            Console.WriteLine("What temperature is it?");
+
+            string userInput = Console.ReadLine();
+
+            int temperature = Int32.Parse(userInput);
             if(temperature < 10)
             {
                 Console.WriteLine("Take the coat");
